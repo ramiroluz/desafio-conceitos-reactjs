@@ -102,6 +102,9 @@ describe("App component", () => {
 
     await actWait();
 
-    expect(getByTestId("repository-list")).toBeEmpty();
+    // Warning: toBeEmpty has been deprecated and will be removed in future updates.
+    // Please use instead toBeEmptyDOMElement for finding empty nodes in the DOM.
+    // expect(getByTestId("repository-list")).toBeEmpty();
+    expect(getByTestId("repository-list")).toBeEmptyDOMElement();
   });
 });

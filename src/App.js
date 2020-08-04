@@ -23,7 +23,8 @@ function App() {
   }
 
   async function handleRemoveRepository(id) {
-    // TODO
+    const repos = repositories.filter(item => item.id !== id);
+    setRepositories(repos);
   }
 
   return (
