@@ -19,7 +19,7 @@ function App() {
 
   const repo = response.data;
 
-  setProjects([... repositories, repo]);
+  setRepositories([... repositories, repo]);
   }
 
   async function handleRemoveRepository(id) {
